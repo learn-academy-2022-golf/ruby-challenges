@@ -68,11 +68,11 @@ end
 #p 'please enter your name too'
 # name = gets.chomp
 # As the first user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
-p 'Please type either "rock", "paper", or "scissors".'
-user1 = gets.chomp
+# p 'Please type either "rock", "paper", or "scissors".'
+# user1 = gets.chomp
 # As the second user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
-p 'Please type either "rock", "paper", or "scissors" as well.'
-user2 = gets.chomp
+# p 'Please type either "rock", "paper", or "scissors" as well.'
+# user2 = gets.chomp
 # As a user, I can see a message in the terminal depicting which user won the round.
 def rps(user1,user2)
         if(user1 == "rock" && user2 == "scissors")
@@ -91,14 +91,24 @@ def rps(user1,user2)
                 "Congrats It's a TIE!!!"
         end    
 end
-        p rps(user1,user2)
+        # p rps(user1,user2)
 # As a user, I can see a message in the terminal noting if there was a tie.
 #   ( see line 90 )
 # ✅ Challenge: Password Checker
 # As a developer, you have been tasked with creating the user registration for a secure web site. To test your code, enter the user ID and password in the terminal to find out if they are acceptable. The user ID and password must adhere to the to following criteria:
 
 # User ID and password cannot be the same.
+p 'Please enter User ID:'
+userid = gets.chomp
+p 'Please enter password:'
+password = gets.chomp
 # User ID and password must be at least six characters long.
+# def characters(userid,password)
+#     if userid.length >= 6 && password.length >= 6 && password.includes == '!' || password.includes =='#'|| password.includes == '$' && userid.includes != '!' || userid.includes != '#' userid.includes != '$' 
+#     else
+#         'Enter a valid userid or password'
+#     end
+# end
 # Password must contain at least one of: !#$
 # User ID cannot contain the following characters: !#$ or spaces
 # Password cannot be the word "password".
