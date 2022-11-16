@@ -38,23 +38,23 @@ end
 # p palindrome my_string
 
 # As the first user, I can see a prompt in the terminal to enter my name.
-puts 'Enter Your Name:'
-name1 = gets.chomp  
-puts "Hello #{name1}"
+# puts 'Enter Your Name:'
+# name1 = gets.chomp  
+# puts "Hello #{name1}"
 
 
 # As the second user, I can see a prompt in the terminal to enter my name.
-puts 'Now, you enter your name:'
-name2 = gets.chomp
-puts "Hello #{name2}"
+# puts 'Now, you enter your name:'
+# name2 = gets.chomp
+# puts "Hello #{name2}"
 
 # As the first user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
-puts "'rock, 'paper', 'scissors'?"
-first_choice = gets.chomp
+# puts "'rock, 'paper', 'scissors'?"
+# first_choice = gets.chomp
 
 # As the second user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
-puts "'rock, 'paper', 'scissors'?"
-second_choice = gets.chomp
+# puts "'rock, 'paper', 'scissors'?"
+# second_choice = gets.chomp
 # As a user, I can see a message in the terminal depicting which user won the round.
 
 def decide_win(first_choice, second_choice)
@@ -80,5 +80,31 @@ def decide_win(first_choice, second_choice)
         'error'
     end
 end
-p decide_win(first_choice, second_choice)
+
 # As a user, I can see a message in the terminal noting if there was a tie.
+# p decide_win(first_choice, second_choice)
+
+# User ID and password cannot be the same.
+puts 'What is your user name?'
+user_name = gets.chomp
+puts 'choose a password!'
+pass_word = gets.chomp
+def is_this_okay(user_name, pass_word)
+    if user_name == pass_word
+        'that is incorrect!'
+    elsif (user_name.length <= 5)
+        'User ID and password must be at least six characters long.'
+    elsif (pass_word.length <= 5)
+        'User ID and password must be at least six characters long.'
+    elsif (pass_word.include?('!', '#', '$'))
+    
+    end
+end
+
+# User ID and password must be at least six characters long.
+p is_this_okay(user_name, pass_word)
+# Password must contain at least one of: !#$
+
+# User ID cannot contain the following characters: !#$ or spaces
+# Password cannot be the word "password".
+# User password must contain at least one number.
