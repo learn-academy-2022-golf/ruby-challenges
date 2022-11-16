@@ -37,7 +37,18 @@
 # p nums_array
 
 # Create a method that takes in an array of lowercase words and capitalizes all of the words, permanently modifying the original array.
+    namez = ['tyler', 'charlie','austin']
+
+    def name_func array
+        array.map do |value|
+            value.upcase
+        end
+    end
+    p name_func namez
+#["TYLER", "CHARLIE", "AUSTIN"]
+
 # Create a method that takes in an array of numbers and returns the largest number in the array.
+
 # Create a method that takes in an array of words and returns the word with the least number of characters.
 # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
 # Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercase letters should be returned lowercased and all lowercased letters should be returned in uppercase letters.
