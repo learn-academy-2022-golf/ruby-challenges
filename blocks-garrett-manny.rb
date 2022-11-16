@@ -55,6 +55,10 @@ end
 p smallest_word ["word", "is", "not", "the", "a"]
 
 # Create a method that takes in an array of numbers and returns only the odd numbers sorted from least to greatest.
+def odd_sort array
+    array.select {|value| }
+end
+
 # Create a method that takes in an array of strings and returns all the strings in reverse casing. All uppercase letters should be returned lowercased and all lowercased letters should be returned in uppercase letters.
 # Create a method that will take in an array of numbers and return an array with the remainder of each number when divided by 2.
 # Create a method that will take in a range of letters and return an array with all the letters capitalized.
