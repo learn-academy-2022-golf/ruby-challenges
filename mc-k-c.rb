@@ -46,28 +46,48 @@
 # ✂️ Challenge: Rock, Paper, Scissors
 # As the first user, I can see a prompt in the terminal to enter my name.
 
-puts 'Player one enter name'
-player_one = gets
+def first_user
+    puts "Player one, Please enter your name"
+    name = gets.chomp
+end
 
+p first_user
 
-# As the second user, I can see a prompt in the terminal to enter my name.
+# # As the second user, I can see a prompt in the terminal to enter my name.
 
-puts 'Player two enter name'
-player_two = gets
+def second_user
+    puts "Player two, Please enter your name"
+    name = gets.chomp
+end
 
+p second_user
 
+# p "WELCOME TO ROCK, PAPER, SCISSORS Ciani and Kent."
 
 # As the first user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
 
-puts ''
+def first_user
+    puts "Player One, Type either rock, paper, or scissors"
+    choice = ['rocks', 'papers', 'scissors']
+    puts "You chose #{choice}"
 
+end
+# p first_user
+p "#{first_user} you chose #{choice}"
 
+# puts "#{first_user} please chose rock, paper, or scissors"
 
 # As the second user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
 
-
+def second_user
+    puts "Player Two, Type either rock, paper, or scissors"
+    choice = gets.chomp
+    puts "You chose #{choice}"
+end
+p "#{second_user} you chose #{choice}"
 
 # As a user, I can see a message in the terminal depicting which user won the round.
+
 
 
 
