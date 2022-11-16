@@ -49,7 +49,7 @@ def palindrome word
     'no'
     end
 end
-p palindrome "racecar"
+#p palindrome "racecar"
 # learnacademy@LEARNs-MacBook-Air ruby-challenges % ruby conditional-methods-charlie-tyler.rb
 # "yes"
 # p word = "car"
@@ -62,11 +62,38 @@ p palindrome "racecar"
 
 # ✂️ Challenge: Rock, Paper, Scissors
 # As the first user, I can see a prompt in the terminal to enter my name.
+#p 'please enter your name'
+#name = gets.chomp
 # As the second user, I can see a prompt in the terminal to enter my name.
+#p 'please enter your name too'
+# name = gets.chomp
 # As the first user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
+p 'Please type either "rock", "paper", or "scissors".'
+user1 = gets.chomp
 # As the second user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
+p 'Please type either "rock", "paper", or "scissors" as well.'
+user2 = gets.chomp
 # As a user, I can see a message in the terminal depicting which user won the round.
+def rps(user1,user2)
+        if(user1 == "rock" && user2 == "scissors")
+           'user1 WINS!!'
+            elsif(user1 == "scissors" && user2 == "paper")  
+            'user1 WINS!!'
+             elsif(user1 == "paper" && user2 == "rock") 
+            'user1 WINS!!'
+            elsif(user2 == "rock" && user1 == "scissors")
+            'user2 WINS!!'
+            elsif(user2 == "scissors" && user1 == "paper")  
+            'user2 WINS!!'
+            elsif(user2 == "paper" && user1 == "rock") 
+            'user2 WINS!!'
+            elsif(user1==user2)
+                "Congrats It's a TIE!!!"
+        end    
+end
+        p rps(user1,user2)
 # As a user, I can see a message in the terminal noting if there was a tie.
+#   ( see line 90 )
 # ✅ Challenge: Password Checker
 # As a developer, you have been tasked with creating the user registration for a secure web site. To test your code, enter the user ID and password in the terminal to find out if they are acceptable. The user ID and password must adhere to the to following criteria:
 
