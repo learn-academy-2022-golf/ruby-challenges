@@ -38,13 +38,47 @@ end
 # p palindrome my_string
 
 # As the first user, I can see a prompt in the terminal to enter my name.
+puts 'Enter Your Name:'
+name1 = gets.chomp  
+puts "Hello #{name1}"
+
 
 # As the second user, I can see a prompt in the terminal to enter my name.
+puts 'Now, you enter your name:'
+name2 = gets.chomp
+puts "Hello #{name2}"
 
 # As the first user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
+puts "'rock, 'paper', 'scissors'?"
+first_choice = gets.chomp
 
 # As the second user, I can see a prompt in the terminal asking me to type either "rock", "paper", or "scissors".
-
+puts "'rock, 'paper', 'scissors'?"
+second_choice = gets.chomp
 # As a user, I can see a message in the terminal depicting which user won the round.
 
+def decide_win(first_choice, second_choice)
+    if (first_choice == 'rock' && second_choice == 'scissors')
+        "rock wins"
+    elsif (first_choice == 'rock' && second_choice == 'rock')
+        'Tie'
+    elsif (first_choice == 'paper' && second_choice == 'paper')
+        'Tie'
+    elsif (first_choice == 'scissors' && second_choice == 'scissors')
+        'Tie'
+    elsif (first_choice == 'scissors' && second_choice == 'paper')
+        'scissors wins'
+    elsif (first_choice == 'scissors' && second_choice == 'rock')
+        'rock wins'
+    elsif (first_choice == 'rock' && second_choice == 'paper')
+        'paper wins'
+    elsif (first_choice == 'paper' && second_choice == 'rock')
+        'paper wins'
+    elsif (first_choice == 'paper' && second_choice == 'scissors')
+        'scissors wins'
+    else 
+        'error'
+    end
+end
+p decide_win(first_choice, second_choice)
 # As a user, I can see a message in the terminal noting if there was a tie.
