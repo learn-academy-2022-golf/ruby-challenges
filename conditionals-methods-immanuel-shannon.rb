@@ -49,6 +49,7 @@
 puts 'User #1 Please Enter Your Name'
 user_name1 = gets.chomp
 puts 'Hello #{user_name1}'
+# left off here working on how to get it to say hello to user name
 
 # As the second user, I can see a prompt in the terminal to enter my name.
 # puts `Hello #{user_name2}`
