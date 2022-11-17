@@ -14,6 +14,7 @@ nums_array [0..20]
 even_arr = nums_array.map do |number|
     number % 2
 end
+
 p 
 # Create a method that takes in an array of numbers and returns a new array with all the numbers multiplied by 5.
 # Create a method that takes in an array of lowercase words and capitalizes all of the words, permanently modifying the original array.

@@ -75,12 +75,36 @@ Find the remainder of the variable when divided by 3.
  => 2 
  
 Create another variable and assign it the integer 13.
+3.0.0 :001 > thirteen = 13
+ => 13 
+
 Use the relational operators on the two variables.
+3.0.0 :005 > thirteen + sample_number
+ => 36 
+3.0.0 :006 > thirteen
+ => 13 
+3.0.0 :007 > sample_number
+ => 23 
+3.0.0 :008 > 
+
 Reassign the value of one variable to be 7.
+3.0.0 :008 > sample_number = 7
+ => 7
+
 Reassign the value of one variable to be 26 times its current value.
+3.0.0 :008 > sample_number = 7
+ => 7 
+3.0.0 :009 > sample_number = sample_number * 26
+ => 182 
+3.0.0 :010 > 7 * 26
+ => 182 
+
 Complete the following challenges in a Ruby file.
+Note: Currently in file...
 
 Create a variable and return it in a sentence using string interpolation.
+animal = 'Cat'
+
 Create a variable that contains a string and test some of the Ruby string methods:
 .upcase
 .reverse
