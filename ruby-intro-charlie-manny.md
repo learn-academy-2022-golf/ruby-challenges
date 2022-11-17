@@ -66,22 +66,68 @@ Reassign the value of one variable to be 26 times its current value.
  => 182 
 3.0.0 :033 > number
  => 182 
-Complete the following challenges in a Ruby file.
+# Complete the following challenges in a Ruby file.
 
-Create a variable and return it in a sentence using string interpolation.
-Create a variable that contains a string and test some of the Ruby string methods:
-.upcase
-.reverse
-.include?
-.capitalize
-.delete
-.index
-.swapcase
-Create an array that contains the name of at least five TV shows you enjoy.
-Find the length of the array.
-Return the first item in the array.
-Return the fourth item in the array.
-Permanently reverse the order of the array.
-Create a new empty array for your top favorite TV shows.
-Using the full TV show array, add your top two favorite shows to the empty array.
+# Create a variable and return it in a sentence using string interpolation.
+name=charlie 
+put "#{name} is in monstropolis"
+#'#name is in monstropolis'
+# Create a variable that contains a string and test some of the Ruby string methods:
+# .upcase
+3.0.0 :002 > name.upcase
+ => "CHARLIE" 
+# .reverse
+3.0.0 :003 > name.reverse
+ => "eilrahc" 
+# .include?
+3.0.0 :004 > name.include? "X"
+ => false 
+# .capitalize
+3.0.0 :005 > name.capitalize
+ => "Charlie" 
+# .delete
+3.0.0 :006 > name.delete "e"
+ => "charli" 
+# .index
+3.0.0 :007 > name.index "r"
+ => 3 
+# .swapcase
+3.0.0 :008 > name.swapcase
+ => "CHARLIE" 
+# Create an array that contains the name of at least five TV shows you enjoy.
+3.0.0 :011 > tv_shows
+ => 
+["supernatural",                                  
+ "powerpuff girls",                               
+ "naruto",                                        
+ "avatar",                                        
+ "attack on titan"]
+# Find the length of the array.
+3.0.0 :012 > tv_shows.length
+ => 5 
+# Return the first item in the array.
+3.0.0 :013 > tv_shows.first
+ => "supernatural" 
+# Return the fourth item in the array.
+3.0.0 :014 > tv_shows[3]
+ => "avatar" 
+# Permanently reverse the order of the array.
+3.0.0 :015 > tv_shows.reverse!
+ => 
+["attack on titan",                                   
+ "avatar",                                          
+ "naruto",                                          
+ "powerpuff girls",                                   
+ "supernatural"] 
+ 3.0.0 :016 > tv_shows
+ => 
+["attack on titan",                                   
+ "avatar",                                          
+ "naruto",                                         
+ "powerpuff girls",                                   
+ "supernatural"]    
+# Create a new empty array for your top favorite TV shows.
+3.0.0 :017 > top_tv_shows=[]
+ => [] 
+# Using the full TV show array, add your top two favorite shows to the empty array.
 ```
