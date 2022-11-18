@@ -48,4 +48,16 @@ end
 
 # 🏔 Stretch Goals
 # As a developer, I can create a custom method that takes in my_phone and returns an array with the app name capitalized and information about each phone app.
+def app_display hash 
+     hash.map do |key, value|
+        "#{key.capitalize} = #{value}"
+    end
+end
+
+p app_display(my_phone2)
 # As a developer, I can create a custom method that takes in my_phone and returns an array with a sentence about the name of each app.
+
+p app_display(my_phone2)
+my_phone2[:games] = {:hearthstone => 'card game', :risk => 'domination board game'}
+p my_phone2
+p my_phone2.dig(:games, :hearthstone)
