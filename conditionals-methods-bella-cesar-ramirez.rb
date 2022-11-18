@@ -48,3 +48,11 @@ end
 # As a user, I can see a message in the terminal depicting which user won the round.
 
 # As a user, I can see a message in the terminal noting if there was a tie.
+first_choice = "rock"
+second_choice = "rock"
+
+def winner_calc(first_choice, second_choice)
+    if(first_choice == "rock" && second_choice == "rock") || (first_choice == "paper" && second_choice == "paper")
+    end
+end
+p winner_calc()
