@@ -41,12 +41,40 @@ p dishes
 
 
 # For the following ColorPalette challenge use initialize and attr_accessor methods in your class.
+class ColorPalette
+    attr_accessor :color1,:color2,:color3
+    def initialize(color1, color2, color3)
+        @color1 = color1
+        @color2 = color2
+        @color3 = color3
+    end
+    def all_colors
+        "The three colors are #{color1}, #{color2}, and #{color3}."
+    end
+end
 
-# As a developer, I can create a class called ColorPalette.
-# As a developer, I can create three instances (objects) of class ColorPalette.
+blue = ColorPalette.new("aquamarine","navy","sky blue")
+green = ColorPalette.new('Chartreuse', 'Kelly', 'Seafoam')
+red = ColorPalette.new("crimson","burgandy", "scarlet")
+
+p blue.color1
+p green.color2
+p red.color3
+
+p blue.all_colors
+
+p blue.color1 = "baby blue"
+p blue
+# As a developer, I can create a class called ColorPalette.✅
+
+# As a developer, I can create three instances (objects) of class ColorPalette.✅
 # e.g green = ColorPalette.new
-# As a developer, I can initialize each instance of the class ColorPalette with three colors.
+
+# As a developer, I can initialize each instance of the class ColorPalette with three colors.✅
 # e.g. green = ColorPalette.new('Chartreuse', 'Kelly', 'Seafoam')
-# As a developer, I can print the value of each individual color.
-# As a developer, I can create a method called all_colors that when called will print a sentence telling me the three colors of a given palette.
-# As a developer, I can change one or more colors of a given palette.
+
+# As a developer, I can print the value of each individual color.✅
+
+# As a developer, I can create a method called all_colors that when called will print a sentence telling me the three colors of a given palette.✅
+
+# As a developer, I can change one or more colors of a given palette.✅
