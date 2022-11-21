@@ -86,38 +86,117 @@
 #<Task:0x000000011d969bf0 @title="laundry", @status="incomplete">
 
 # As a developer, I can update the status of each instance of class Task when the task has been completed.
-class Task
+# class Task
 
-    # initializer
-    def initialize(title)
-        @title = title
-        @status = "incomplete"
-    end
-    # Getters
-    def get_title
-        @title
-    end
-    # Setters
-    def set_status
-        @status = "complete"
-    end
-end
+#     # initializer
+#     def initialize(title)
+#         @title = title
+#         @status = "incomplete"
+#     end
+#     # Getters
+#     def get_title
+#         @title
+#     end
+#     # Setters
+#     def set_status
+#         @status = "complete"
+#     end
+# end
 
-laundry = Task.new("laundry")
-mop = Task.new("mop")
-sweep = Task.new("sweep")
+# laundry = Task.new("laundry")
+# mop = Task.new("mop")
+# sweep = Task.new("sweep")
 
 # Call getter method for each
-p laundry.set_status
+# p laundry.set_status
 # "complete"
 
 # For the following ColorPalette challenge use initialize and attr_accessor methods in your class.
 
 # As a developer, I can create a class called ColorPalette.
+# class ColorPalette
+
+# end
+
 # As a developer, I can create three instances (objects) of class ColorPalette.
+
+# darks = ColorPalette.new
+# brights = ColorPalette.new
+# monotone = ColorPalette.new
+# p darks   #<ColorPalette:0x00007fa65b80fb98>
+
 # e.g green = ColorPalette.new
+
 # As a developer, I can initialize each instance of the class ColorPalette with three colors.
 # e.g. green = ColorPalette.new('Chartreuse', 'Kelly', 'Seafoam')
+
+# class ColorPalette
+
+#     # attr_accessor :title
+
+#     def initialize(color1, color2, color3)
+#         @color1 = color1
+#         @color2 = color2
+#         @color3 = color3
+#     end
+
+# end
+
+# darks = ColorPalette.new('blue', 'indigo', 'violet')
+# p darks   #<ColorPalette:0x00007fa842132530 @color1="blue", @color2="indigo", @color3="violet">
+# brights = ColorPalette.new('orange', 'yellow', 'red')
+# p brights   #<ColorPalette:0x00007fcaeb80e950 @color1="orange", @color2="yellow", @color3="red">
+# monotone = ColorPalette.new('black', 'white', 'grey')
+# p monotone   #<ColorPalette:0x00007fcaeb80e1d0 @color1="black", @color2="white", @color3="grey">
+
 # As a developer, I can print the value of each individual color.
+# class ColorPalette
+
+#     attr_accessor :color1, :color2, :color3
+
+#     def initialize(color1, color2, color3)
+#         @color1 = color1
+#         @color2 = color2
+#         @color3 = color3
+#     end
+
+# end
+
+# darks = ColorPalette.new('blue', 'indigo', 'violet')
+# p darks.color1 #"blue"
+# brights = ColorPalette.new('orange', 'yellow', 'red')
+# p brights.color2 #"yellow"
+# monotone = ColorPalette.new('black', 'white', 'grey')
+# p monotone.color3 #"grey"
+
 # As a developer, I can create a method called all_colors that when called will print a sentence telling me the three colors of a given palette.
+
+class ColorPalette
+
+    attr_accessor :color1, :color2, :color3
+
+    def initialize(color1, color2, color3)
+        @color1 = color1
+        @color2 = color2
+        @color3 = color3
+    end
+
+    def all_colors
+        "Color variations include #{@color1}, #{@color2}, and #{@color3}"
+    end
+
+end
+
+darks = ColorPalette.new('blue', 'indigo', 'violet')
+# p darks.all_colors #"Color variations include blue, indigo, and violet"
+brights = ColorPalette.new('orange', 'yellow', 'red')
+# p brights.all_colors #"Color variations include orange, yellow, and red"
+monotone = ColorPalette.new('black', 'white', 'grey')
+# p monotone.all_colors #"Color variations include black, white, and grey"
+
 # As a developer, I can change one or more colors of a given palette.
+p darks.color1 #"blue"
+darks.color1 = "purple"
+p darks.color1
+
+
