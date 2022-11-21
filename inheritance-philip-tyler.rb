@@ -34,7 +34,7 @@
 # Hint: Use attr_accessor as well as an initialize method.
 
 class Animal
-    attr_accessor :alive, :age, :name
+    # attr_accessor :alive, :age, :name
 
     def initialize name
         @alive = true
@@ -54,23 +54,25 @@ lion.year_age
 
 p lion
 # As a developer, I can create a Fish that inherits from Animal.
-       class Fish < Animal
-# As a developer, I can initialize all of my fish to be cold_blooded. (Yes, there is one fish who is technically fully warm-blooded but we aren't going to talk about that.)
+
+# As a developer, I can initialize all of my fish to be cold_blooded.
 
     class Fish < Animal
+        def initialize (alive, age, name, cold_blooded)
+            super(alive, age, name)
+            @cold_blooded = true
+        end
     end
-        def initialize cold_blooded
 
+    class Salmon < Fish
+        def initialize (alive, age, name, cold_blooded, species)
+            super(alive, age, name)
+            @species = species
         end
+    end
 
-
-class Salmon < Fish
-
-        def initialize species
-            @cold_blooded = cold_blooded
-        end
-
-
+    sockeye = Salmon.new ""  
+    p sockeye
 
 
 # As a developer, I can create a Salmon that inherits from Fish.
