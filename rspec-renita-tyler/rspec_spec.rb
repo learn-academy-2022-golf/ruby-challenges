@@ -25,7 +25,12 @@ finished_laundry = Task.new('Laundry', 'wash clothes','done')
     expect(laundry.status).to eq('in progress')
     expect(finished_laundry.status).to eq('done')
  end
-
+ it 'has a due date' do
+     todays_date = Date.new(2022,11,22)
+      laundry = Task.new('Laundry', 'wash clothes', date)
+      expect(laundry.date).to eq(2022-11-22)
+   
+ end
 end
 # As a developer, I can give a Task a title and retrieve it. ✅
 # As a developer, I can give a Task a description and retrieve it. ✅
